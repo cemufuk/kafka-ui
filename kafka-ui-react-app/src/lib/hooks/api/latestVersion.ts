@@ -5,7 +5,7 @@ import {
 } from 'lib/constants';
 
 const fetchLatestVersion = async () => {
-  const data = {
+  const data = `{
     "url": "https://api.github.com/repos/provectus/kafka-ui/releases/99426762",
     "assets_url": "https://api.github.com/repos/provectus/kafka-ui/releases/99426762/assets",
     "upload_url": "https://uploads.github.com/repos/provectus/kafka-ui/releases/99426762/assets{?name,label}",
@@ -91,7 +91,8 @@ const fetchLatestVersion = async () => {
       "eyes": 1
     },
     "mentions_count": 3
-  }  
+  }
+  ` 
 
   return data;
 };
